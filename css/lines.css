@@ -1,0 +1,64 @@
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+    display: flex;
+}
+
+.blank-1 {
+    height: 5%;
+    width: 80%;
+}
+
+.blank-2,
+.blank-3 {
+    height: 5%;
+    width: 50%;
+}
+
+.legenda {
+    display: flex;
+    width: 100%;
+    margin: 5%;
+}
+
+.nao-metais {
+    background: rgb(169, 217, 91);
+}
+
+.metais-alcalinos {
+    background: rgb(240, 194, 88);
+}
+
+.semimetais {
+    background: rgb(117, 200, 184);
+}
+
+.outros-metais {
+    background: rgb(165, 202, 214);
+}
+
+.lantanideos {
+    background: rgb(161, 219, 222);
+}
+
+.gases-nobres {
+    background: rgb(119, 178, 228);
+}
+
+.metais-alcalinos-terrosos {
+    background: rgb(231, 229, 84);
+}
+
+.halogenios {
+    background: rgb(181, 225, 241);
+}
+
+.metais-de-transicao {
+    background: rgb(238, 158, 173);
+}
+
+.actinidios {
+    background: rgb(226, 175, 213);
+}

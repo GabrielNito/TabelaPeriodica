@@ -1,0 +1,12 @@
+{
+  "1": {"linha":1,"data":{"elemento":1,"numAtom":1,"simAtom":"H","nome":"Hidrogênio","pesoAtom":1.008,"tipo":"naoMetais"}},
+  "2": {"linha":1,"data":{"elemento":2,"numAtom":2,"simAtom":"He","nome":"Hélio","pesoAtom":4.0026,"tipo":"gasesNobres"}},
+  "3": {"linha":2,"data":{"elemento":1,"numAtom":3,"simAtom":"Li","nome":"Lítio","pesoAtom":6.94,"tipo":"metaisAlcalinos"}},
+  "4": {"linha":2,"data":{"elemento":2,"numAtom":4,"simAtom":"Be","nome":"Berílio","pesoAtom":9.9122,"tipo":"metaisAlcalinosTerrosos"}},
+  "5": {"linha":2,"data":{"elemento":3,"numAtom":5,"simAtom":"B","nome":"Boro","pesoAtom":10.81,"tipo":"semimetais"}},
+  "6": {"linha":2,"data":{"elemento":4,"numAtom":6,"simAtom":"C","nome":"Carbono","pesoAtom":12.011,"tipo":"naoMetais"}},
+  "7": {"linha":2,"data":{"elemento":5,"numAtom":7,"simAtom":"N","nome":"Nitrogênio","pesoAtom":14.007,"tipo":"naoMetais"}},
+  "8": {"linha":2,"data":{"elemento":6,"numAtom":8,"simAtom":"O","nome":"Oxigênio","pesoAtom":15.999,"tipo":"naoMetais"}},
+  "9": {"linha":2,"data":{"elemento":7,"numAtom":9,"simAtom":"F","nome":"Flúor","pesoAtom":18.998,"tipo":"halogenios"}},
+  "10": {"linha":2,"data":{"elemento":8,"numAtom":10,"simAtom":"Ne","nome":"Neônio","pesoAtom":20.18,"tipo":"gasesNobres"}}
+}
