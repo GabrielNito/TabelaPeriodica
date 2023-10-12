@@ -1,31 +1,5 @@
-@media (max-width: 1669px) {
-    .p-atom {
-        display: none;
-    }
-    .nome {
-        text-align: center;
-        position: relative;
-        bottom: 5px;
-    }
-}
-
-@media (max-width: 1350px) {
-    ul {
-        height: 5%;
-    }
-    li {
-        height: auto;
-    }
-    .nome {
-        display: none;
-    }
-    .n-atom {
-        display: none;
-    }
-    .s-atom {
-        text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+@media (max-width: 1281px) {
+    html {
+        font-size: 10.67px;
     }
 }

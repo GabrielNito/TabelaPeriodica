@@ -1,9 +1,19 @@
+/* https://www.google.com/search?q=tabela+periodica&source=lmns&hl=en&sa=X&ved=2ahUKEwjc643hvM2BAxVMq5UCHW8eDj4Q0pQJKAB6BAgBEAI */
+
 .line1,
 .line2,
 .line3,
 .line4,
-.line5 {
+.line5,
+.line6,
+.line7,
+.line8,
+.line9 {
     display: flex;
+}
+
+.line8 {
+    margin-top: 2.5%;
 }
 
 .blank-1 {
@@ -17,48 +27,52 @@
     width: 50%;
 }
 
-.legenda {
-    display: flex;
-    width: 100%;
-    margin: 5%;
+.blank-8:nth-child(2),
+.blank-9:nth-child(2) {
+    height: 5%;
+    width: 15%;
 }
 
-.nao-metais {
-    background: rgb(169, 217, 91);
+#nao-metais {
+    background: var(--nao-metais);
 }
 
-.metais-alcalinos {
-    background: rgb(240, 194, 88);
+#metais-alcalinos {
+    background: var(--metais-alcalinos);
 }
 
-.semimetais {
-    background: rgb(117, 200, 184);
+#semimetais {
+    background: var(--semimetais);
 }
 
-.outros-metais {
-    background: rgb(165, 202, 214);
+#outros-metais {
+    background: var(--outros-metais);
 }
 
-.lantanideos {
-    background: rgb(161, 219, 222);
+#lantanideos {
+    background: var(--lantanideos);
 }
 
-.gases-nobres {
-    background: rgb(119, 178, 228);
+#gases-nobres {
+    background: var(--gases-nobres);
 }
 
-.metais-alcalinos-terrosos {
-    background: rgb(231, 229, 84);
+#metais-alcalinos-terrosos {
+    background: var(--metais-alcalinos-terrosos);
 }
 
-.halogenios {
-    background: rgb(181, 225, 241);
+#propriedades-desconhecidas {
+    background: var(--propriedades-desconhecidas);
 }
 
-.metais-de-transicao {
-    background: rgb(238, 158, 173);
+#metais-de-transicao {
+    background: var(--metais-de-transicao);
 }
 
-.actinidios {
-    background: rgb(226, 175, 213);
+#actinidios {
+    background: var(--actinidios);
+}
+
+#pos-transicao {
+    background: var(--pos-transicao);
 }

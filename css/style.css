@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --nao-metais: rgb(169, 217, 91);
-  --metais-alcalinos: rgb(240, 194, 88);
-  --semimetais: rgb(117, 200, 184);
-  --outros-metais: rgb(165, 202, 214);
-  --lantanideos: rgb(161, 219, 222);
-  --gases-nobres: rgb(119, 178, 228);
-  --metais-alcalinos-terrosos: rgb(231, 229, 84);
-  --halogenios: rgb(181, 225, 241);
-  --metais-de-transicao: rgb(238, 158, 173);
-  --actinidios: rgb(226, 175, 213);
-  --borda: rgba(0, 0, 0, 5%);
+  --bg1: #303446;
+  --bg2: #eff1f5;
+  --bg3: #4c4f69;
+  --txt1: #bdd0f5;
+  --txt2: #303446;
+  --nao-metais: #40a02b;
+  --metais-alcalinos: #fe640b;
+  --semimetais: #179299;
+  --pos-transicao: #7287fd;
+  --lantanideos: #209fb5;
+  --gases-nobres: #1e66f5;
+  --metais-alcalinos-terrosos: #df8e1d;
+  --halogenios: #04a5e5;
+  --metais-de-transicao: #dd7878;
+  --actinidios: #dc8a78;
+  --propriedades-desconhecidas: #4c4f69;
 }
 
 * {
@@ -24,72 +29,105 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: var(--bg1);
+  color: var(--txt1);
+  position: relative;
+}
+
+#loading-screen {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--bg1);
+  transition: all .3s ease;
 }
 
 .container {
-  overflow: hidden;
-  height: 100vw;
-}
-
-.n-atom {
-  position: relative;
-  top: 5px;
-  left: 5px;
-  font-size: 12px;
-}
-
-.s-atom {
-  text-align: center;
-  margin: 1px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.nome {
-  text-align: center;
-  margin: 1px;
-  font-size: 12px;
-}
-
-.p-atom {
-  text-align: center;
-  margin: 3px;
-  font-size: 12px;
+  height: 100%;
+  width: 100%;
 }
 
 ul {
   width: 100%;
-  height: 5%;
+  height: 10%;
 }
 
 li {
   list-style-type: none;
   height: 10%;
   width: 5%;
-  border: groove 1.5px rgba(0, 0, 0, 5%);
   transition: all ease 0.3s;
+  position: relative;
 }
 
 li:hover {
   height: 100%;
 }
 
+.n-atom {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: .8rem;
+}
+
+.s-atom {
+  text-align: center;
+  margin: 1px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nome {
+  text-align: center;
+  margin: 1px;
+  font-size: .8rem;
+}
+
+.p-atom {
+  text-align: center;
+  margin: 3px;
+  font-size: .8rem;
+}
+
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  z-index: 4;
+}
+
 .grid_ul {
   display: flex;
   margin-left: 5%;
-  margin-top: 4rem;
+  height: 10%;
+  width: 100%;
 }
 
 .grid_ul p {
-  width: 5vw;
-  height: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  height: 100%;
   text-align: center;
 }
 
 .grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 5%;
-  height: 5%;
+  height: 100%;
   text-align: center;
   vertical-align: middle;
   font-size: 1rem;
@@ -97,17 +135,31 @@ li:hover {
 
 .legenda {
   display: flex;
-
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  color: var(--txt2);
+  width: 91%;
+  height: 40%;
+  margin: 5% 4.5% 0 4.5%;
 }
 
-.legenda li {
+.legenda button {
+  border: none;
+  cursor: pointer;
   display: flex;
-  top: 50%;
   text-align: center;
   justify-content: center;
-  transform: translateX(-50%);
+  align-items: center;
   list-style-type: none;
-  height: 100%;
-  width: 10%;
-  border: groove 1.5px rgba(0, 0, 0, 5%);
+  height: 30%;
+  margin: 1.5% 1.5%;
+  padding: 20px 0;
+  width: 17%;
+  font-size: 1.25rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  transition: all .3s ease;
 }
