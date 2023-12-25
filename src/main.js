@@ -22,35 +22,24 @@ export function criaLI(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link
         callback(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link)
 }
 
-export function geral(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link, callback) {
+function criaElemento(classe, valor, elemento) {
+        let div = document.createElement('div');
+        div.classList.add(classe);
+        elemento.appendChild(div);
+        div.innerHTML = valor;
+}
+
+export function geral(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link) {
         let elemento = document.getElementById(`el${elNum}-line${lineNum}`);
-
-        let numAtomico = document.createElement('div');
-        numAtomico.classList.add(`n-atom`);
-        elemento.appendChild(numAtomico);
-        numAtomico.innerHTML = numAtom;
-
-        let simAtomico = document.createElement('div');
-        simAtomico.classList.add(`s-atom`);
-        elemento.appendChild(simAtomico);
-        simAtomico.innerHTML = simAtom;
-
-        let nomeAtomo = document.createElement('div');
-        nomeAtomo.classList.add('nome');
-        elemento.appendChild(nomeAtomo);
-        nomeAtomo.innerHTML = nome;
-
-        let pesoAtomo = document.createElement('div');
-        pesoAtomo.classList.add('p-atom');
-        elemento.appendChild(pesoAtomo);
-        pesoAtomo.innerHTML = pesoAtom;
-
+        criaElemento('n-atom', numAtom, elemento)
+        criaElemento('s-atom', simAtom, elemento)
+        criaElemento('nome', nome, elemento)
+        criaElemento('p-atom', pesoAtom, elemento)
         let linkElemento = document.createElement('a')
         linkElemento.classList.add('link')
         linkElemento.setAttribute('target', '_blank');
         elemento.appendChild(linkElemento)
         linkElemento.href = link;
-
         elemento.style.backgroundColor = c;
 }
 
@@ -67,7 +56,6 @@ export function asyncCall(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, l
 
 export function loadingScreen() {
         const screen = document.getElementById('loading-screen')
-
         setTimeout(() => {
                 console.log('eitah')
                 document.body.style.overflowY = 'auto'
