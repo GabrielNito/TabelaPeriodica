@@ -10,6 +10,7 @@ export const metaisdeTransicao = 'var(--metais-de-transicao)';
 export const actinidios = 'var(--actinidios)';
 export const posTransicao = 'var(--pos-transicao)';
 export const propriedadesDesconhecidas = 'var(--propriedades-desconhecidas)';
+
 export function criaLI(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link, callback) {
         let li = document.createElement('li')
         let parentTag = document.getElementsByClassName(`line${lineNum}`)
