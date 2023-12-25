@@ -10,7 +10,6 @@ export const metaisdeTransicao = 'var(--metais-de-transicao)';
 export const actinidios = 'var(--actinidios)';
 export const posTransicao = 'var(--pos-transicao)';
 export const propriedadesDesconhecidas = 'var(--propriedades-desconhecidas)';
-
 export function criaLI(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link, callback) {
         let li = document.createElement('li')
         let parentTag = document.getElementsByClassName(`line${lineNum}`)
@@ -21,14 +20,12 @@ export function criaLI(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link
 
         callback(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link)
 }
-
 function criaElemento(classe, valor, elemento) {
         let div = document.createElement('div');
         div.classList.add(classe);
         elemento.appendChild(div);
         div.innerHTML = valor;
 }
-
 export function geral(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link) {
         let elemento = document.getElementById(`el${elNum}-line${lineNum}`);
         criaElemento('n-atom', numAtom, elemento)
@@ -42,18 +39,15 @@ export function geral(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link)
         linkElemento.href = link;
         elemento.style.backgroundColor = c;
 }
-
 export function blank(lineNum) {
         let blank = document.createElement('div')
         let parentTag = document.getElementsByClassName(`line${lineNum}`)
         blank.classList.add(`blank-${lineNum}`);
         parentTag[0].appendChild(blank);
 }
-
 export function asyncCall(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link) {
         criaLI(lineNum, elNum, numAtom, simAtom, nome, pesoAtom, c, link, geral);
 };
-
 export function loadingScreen() {
         const screen = document.getElementById('loading-screen')
         setTimeout(() => {
